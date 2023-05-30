@@ -16,7 +16,7 @@ subreddit = reddit.subreddit('wallstreetbets')
 
 
 # hot_posts = subreddit.hot(limit=10000)
-hot_posts = subreddit.new(limit=100000)
+hot_posts = subreddit.new(limit=1000)
 posts = []
 # Hottest Post in r/wallstreetbets
 for post in hot_posts:
