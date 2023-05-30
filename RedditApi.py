@@ -14,8 +14,7 @@ reddit = praw.Reddit("BearishBetsBot")
 # Instantiate subreddit
 subreddit = reddit.subreddit('wallstreetbets')
 
-
-# hot_posts = subreddit.hot(limit=10000)
+# Limit is 1000. Any more than this and it will still cut off at 1k.
 hot_posts = subreddit.new(limit=1000)
 posts = []
 # Hottest Post in r/wallstreetbets
